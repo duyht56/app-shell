@@ -38,7 +38,7 @@ module.exports = withBundleAnalyzer({
           "./mainNav": "./components/Navigation/MainNav.js",
         },
         remotes: {
-          PDP: `PDP@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
+          PDP: `PDP@https://app-pdp-duyhoang-avivetech.vercel.app/_next/static/${location}/remoteEntry.js`,
           Support:
             "Support@https://gray-hill-0a779f603.1.azurestaticapps.net/_next/static/chunks/remoteEntry.js",
         },

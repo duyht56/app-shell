@@ -11,15 +11,15 @@ export default function getDynamicComponent(c) {
   });
 }
 
-const VideoGallery = dynamic(() => import("PDP/VideoGallery"), { ssr: false });
+const VideoGallery = dynamic(() => import("PDP/VideoGallery"), { ssr: true });
 const BenefitsProps = dynamic(() => import("PDP/BenefitsProps"), {
-  ssr: false,
+  ssr: true,
 });
-const DetailProps = dynamic(() => import("PDP/DetailProps"), { ssr: false });
+const DetailProps = dynamic(() => import("PDP/DetailProps"), { ssr: true });
 const ProductInformation = dynamic(() => import("PDP/ProductInformation"), {
-  ssr: false,
+  ssr: true,
 });
-const LandingProps = dynamic(() => import("PDP/LandingProps"), { ssr: false });
+const LandingProps = dynamic(() => import("PDP/LandingProps"), { ssr: true });
 
 export const getRemoteComponent = (name) => {
   switch (name) {
@@ -39,13 +39,13 @@ export const getRemoteComponent = (name) => {
       return LandingProps;
       break;
     // case "Hero":
-    //   return dynamic(() => import("Support/Hero"), { ssr: false });
+    //   return dynamic(() => import("Support/Hero"), { ssr: true });
     //   break;
     // case "LargeContentArea":
-    //   return dynamic(() => import("Support/LargeContentArea"), { ssr: false });
+    //   return dynamic(() => import("Support/LargeContentArea"), { ssr: true });
     //   break;
     // case "SupportBlockArea":
-    //   return dynamic(() => import("Support/SupportBlockArea"), { ssr: false });
+    //   return dynamic(() => import("Support/SupportBlockArea"), { ssr: true });
     //   break;
   }
 };
