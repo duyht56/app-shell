@@ -1,0 +1,109 @@
+.LargeContentItem {
+    background-color: #7b8a9c;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 10px;
+    min-width: 375px;
+  }
+  .LargeContentItem-content-title {
+    line-height: 1.2;
+    font-family: Semibold, Noto Sans, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    font-size: 1.375rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .LargeContentItem-media {
+    min-height: auto;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 84%;
+    height: 310px;
+    z-index: 3;
+  }
+  .LargeContentItem-content {
+    background-color: #011e41;
+    box-sizing: border-box;
+    color: #fff;
+    margin-top: 40px;
+    padding: 365px 30px 20px;
+    position: relative;
+    width: calc(100% - 40px);
+    z-index: 2;
+  }
+  .LargeContentItem-content .btn-primary {
+    color: #011e41;
+    background: #fff;
+    border-color: #fff;
+  }
+  @media only screen and (min-width: 540px) {
+    .LargeContentItem-content-title {
+      font-size: 26px;
+      font-size: 1.625rem;
+    }
+  }
+  @media only screen and (min-width: 571px) {
+    .LargeContentItem-media {
+      width: calc(100% - 30px);
+    }
+    .LargeContentItem-content .btn-primary {
+      width: auto;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .LargeContentItem {
+      height: 0;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      margin-bottom: 15px;
+      min-height: 43vw;
+      overflow: hidden;
+    }
+    .LargeContentItem-content-title {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+      .LargeContentItem {
+        height: 100%;
+      }
+    }
+    .LargeContentItem-media {
+      top: 0;
+      width: 93%;
+      height: 88%;
+      z-index: 1;
+    }
+    .LargeContentItem-content {
+      background-color: rgba(1, 30, 65, 0.9);
+      bottom: 20px;
+      right: 10%;
+      max-width: 65%;
+      margin-top: 0;
+      margin-right: 0;
+      padding-top: 20px;
+      width: 100%;
+    }
+    .LargeContentItem-content .btn-primary {
+      cursor: pointer;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .LargeContentItem-content {
+      bottom: 25px;
+      max-width: 47%;
+      padding: 40px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .LargeContentItem-content {
+      padding: 100px;
+    }
+  }

@@ -1,0 +1,114 @@
+// @mixin btn($bg, $fg, $border) {
+//   display: inline-block;
+//   background: $bg;
+//   color: $fg;
+//   border: 1px solid $border;
+//   cursor: pointer;
+//   border-radius: 3px;
+//   padding: $s/2 $s;
+//   text-align: center;
+//   outline:none;
+//   font-family: $font-family;
+//   font-weight: 700;
+//   font-size: 0.8rem;
+//   white-space: nowrap;
+// }
+
+// .btn {
+//   @include btn($action-bg, $action-fg, $action-border);
+//     &:hover {
+//       background-color: $action-hover-bg;
+//       color: $action-hover-fg;
+//       border-color: $action-border;
+//     }
+//     > span {
+//       font-size: inherit;
+//       font-weight: inherit;
+//       color: inherit;
+//       font-family: inherit;
+//     }
+
+// }
+
+// .btn[disabled] {
+//   opacity: 0.3
+// }
+
+// .btn-s {
+//   @include btn($action-bg, $action-fg, $action-border);
+//   padding: 0 15px;
+//   min-width: 30px;
+//   font-size: 14px;
+//   line-height: 30px;
+// }
+// .btn-m {
+//   @include btn($action-bg, $action-fg, $action-border);
+//   padding: 0 20px;
+//   min-width: 40px;
+//   font-size: 14px;
+//   line-height: 40px;
+// }
+// .btn-l {
+//   @include btn($action-bg, $action-fg, $action-border);
+//   padding: 0 25px;
+//   min-width: 50px;
+//   font-size: 14px;
+//   line-height: 50px;
+// }
+
+// .btn-primary {
+//   @include btn($primary-action-bg, $primary-action-fg, $primary-action-border);
+//   transition: all 0.3s;
+//   &:hover {
+//     background-color: $primary-action-bg;
+//     color: $primary-action-fg;
+//     border-color: $action-border
+//   }
+// }
+// .btn-primary-alt {
+//   @include btn($primary-alt-action-bg, $primary-alt-action-fg, $primary-alt-action-border);
+//   transition: all 0.3s;
+// }
+// .btn-alert {
+//   @include btn($alert-action-bg, $alert-action-fg, $alert-action-border);
+//   transition: all 0.3s;
+//   &:hover {
+//     @include btn($action-bg, $action-fg, $action-border)
+//   }
+// }
+
+
+.btn {
+  font-family: $font-family;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+}
+.btn-primary {
+  color: $primary;
+  background-color: $white;
+}
+.btn-secondary {
+  color: $white;
+  background-color: $primary;
+}
+.btn-alert {
+  color: $white;
+  background-color: $alert;
+}
+.btn-small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.btn-medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.btn-large {
+  font-size: 16px;
+  padding: 12px 24px;
+}

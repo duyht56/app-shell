@@ -1,0 +1,426 @@
+.HomePageCarousel {
+    margin-bottom: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    .swiper-slide {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: calc(100vh - 125px);
+    }
+    .HomePageCarousel-container {
+      margin-bottom: 0;
+      min-height: auto;
+    }
+  }
+  .HomePageCarousel-media-nuxt-image {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+  }
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel {
+      margin-bottom: 15px;
+      .swiper-slide {
+        height: calc(100vh - 155px);
+        min-height: 600px;
+      }
+    }
+    .HomePageCarousel-media {
+      min-height: 55vh;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel {
+      min-height: auto;
+      .swiper-slide {
+        height: calc(100vh - 183px);
+        max-height: 700px;
+        min-height: 460px;
+      }
+    }
+  }
+  
+  .HomePageCarousel {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    position: relative;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  .HomePageCarousel a {
+    text-decoration: none;
+  }
+  
+  .HomePageCarousel-media {
+    position: relative;
+    width: 100%;
+    min-height: 56vh;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-media {
+      min-height: 55vh;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel-media {
+      min-height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .HomePageCarousel-media-image,
+  .HomePageCarousel-media-video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  
+  .HomePageCarousel-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background-color: #011e41;
+    color: #fff;
+    box-sizing: border-box;
+    min-height: 175px;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel-content {
+      padding: 20px 30px;
+      background-color: rgba(1, 30, 65, 0.9);
+      max-width: 35%;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+    }
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .HomePageCarousel-content {
+      max-width: 32%;
+      padding: 50px;
+    }
+  }
+  
+  .HomePageCarousel-media-image--mobile .HomePageCarousel-media-video-box {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-media-image--mobile .HomePageCarousel-media-video-box {
+      display: block;
+    }
+  }
+  
+  .HomePageCarousel-media-video-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1;
+  }
+  
+  .HomePageCarousel-media-video {
+    object-fit: cover;
+  }
+  
+  .HomePageCarousel-content-text {
+    width: 100%;
+  }
+  
+  .HomePageCarousel-content-body {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  
+  .HomePageCarousel-content-body--desktop {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-body--desktop {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel-content-body--desktop {
+      font-size: 20px;
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-body--mobile {
+      display: none;
+    }
+  }
+  
+  .HomePageCarousel-content-body p {
+    margin-bottom: 5px;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-body p {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel-content-body p {
+      margin-bottom: 25px;
+    }
+  }
+  
+  .HomePageCarousel .btn-hot,
+  .HomePageCarousel .btn-primary {
+    position: absolute;
+    // top: 0;
+    // left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    opacity: 0;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel .btn-hot,
+    .HomePageCarousel .btn-primary {
+      position: inherit;
+      text-indent: 0;
+      width: auto;
+      height: auto;
+      opacity: 1;
+      padding-left: 44px;
+      padding-right: 44px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel .btn-hot,
+    .HomePageCarousel .btn-primary {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .HomePageCarousel .btn-primary {
+    background-color: #fff;
+    color: #011e41;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  
+  .HomePageCarousel-content-carouselTitle {
+    position: relative;
+    margin-bottom: 7px;
+    line-height: 1.2;
+    font-family: Semibold, Noto Sans, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 540px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 26px;
+      font-size: 1.625rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+  }
+  
+  @media only screen and (min-width: 321px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 22px;
+      font-size: 1.375rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-carouselTitle {
+      margin-top: auto;
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 24px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomePageCarousel-content-carouselTitle {
+      line-height: 1.2;
+      font-family: Semibold, Noto Sans, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      font-size: 1.375rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) and (min-width: 540px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 26px;
+      font-size: 1.625rem;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) and (min-width: 768px) {
+    .HomePageCarousel-content-carouselTitle {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+  }
+  
+  .HomepageCarousel .swiper__bullets {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 15px 20px;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .HomepageCarousel .swiper__bullets {
+      padding: 20px 15px 40px;
+      margin-left: -40px;
+    }
+  }
+  
+  .HomePageCarousel .btn-primary {
+    &:active,
+    &:hover,
+    &:focus {
+      color: #011e41;
+      background-color: #dfe7ea;
+    }
+  }
+  
+  .HomePageCarousel .btn-hot {
+    background-color: #fe3921;
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: #d22d19;
+    }
+  }
+  .HomepageCarousel .swiper__bullet {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: transparent;
+    -ms-flex: 1;
+    flex: 1;
+    border: 0;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomepageCarousel .swiper__bullet {
+      margin-left: 40px;
+      max-width: 160px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .HomepageCarousel-tab-carouselTitle {
+    display: none;
+  }
+  
+  .swiper-pagination-bullet {
+    opacity: 1 !important;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomepageCarousel-tab-carouselTitle {
+      font-family: Semibold, Noto Sans, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      font-size: 0.875rem;
+      display: inline-block;
+      color: #7b8a9c;
+      margin-bottom: 4px;
+    }
+  
+    .swiper-pagination-bullet-active .HomepageCarousel-tab-carouselTitle,
+    .swiper__bullet--active .HomepageCarousel-tab-carouselTitle {
+      color: #011e41;
+    }
+  }
+  
+  .HomepageCarousel-tab-progress {
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background-color: #dfe7ea;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .HomepageCarousel-tab-progress {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  .HomepageCarousel-tab-progressValue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #011e41;
+  }

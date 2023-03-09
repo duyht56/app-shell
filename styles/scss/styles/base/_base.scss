@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Light; 
+  font-weight: 200;
+  font-style: normal;
+  font-display: fallback;
+  src: url('~/styles/scss/fonts/ElectroluxSans-Light.woff2') format('woff2'),url('~/styles/scss/fonts/ElectroluxSans-Light.woff') format('woff');
+}
+@font-face {
+  font-family: Regular; 
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url('~/styles/scss/fonts/ElectroluxSans-Regular.woff2') format('woff2'),url('~/styles/scss/fonts/ElectroluxSans-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: Semibold; 
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+  src: url('~/styles/scss/fonts/ElectroluxSans-Semibold.woff2') format('woff2'),url('~/styles/scss/fonts/ElectroluxSans-Semibold.woff') format('woff');
+}
+
+
+
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block
+}
+
+audio,
+canvas,
+video {
+  display: inline-block
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden],
+template {
+  display: none
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+a {
+  background: transparent
+}
+
+a:focus {
+  outline: thin dotted
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+abbr[title] {
+  border-bottom: 1px dotted
+}
+
+dfn {
+  font-style: italic
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0
+}
+
+mark {
+  background: #ff0;
+  color: #000
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em
+}
+
+pre {
+  white-space: pre-wrap
+}
+
+q {
+  quotes: "“""”""‘""’"
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline
+}
+
+sup {
+  top: -.5em
+}
+
+sub {
+  bottom: -.25em
+}
+
+img {
+  border: 0
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+
+legend {
+  border: 0;
+  padding: 0
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0
+}
+
+button,
+input {
+  line-height: normal
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default
+}
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+[data-bgset] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+.alpha,
+h1 {
+  margin: 0 0 15px
+}
+
+@media only screen and (min-width:768px) {
+
+  .alpha,
+  h1 {
+    margin: 0 0 30px
+  }
+}
+
+.beta,
+h2 {
+  margin: 0 0 12px
+}
+
+@media only screen and (min-width:768px) {
+
+  .beta,
+  h2 {
+    margin: 0 0 20px
+  }
+}
+
+.gamma,
+h3 {
+  margin: 0 0 15px
+}
+
+@media only screen and (min-width:768px) {
+
+  .gamma,
+  h3 {
+    margin: 0 0 20px
+  }
+}
+
+.delta,
+.epsilon,
+h4,
+h5 {
+  margin: 0 0 15px
+}
+
+h6 {
+  margin: 0 0 10px
+}
+
+ol,
+p,
+ul {
+  margin: 0 0 15px
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  color: #011e41
+}
+
+[role=button]:hover,
+[type=button]:hover,
+[type=submit]:hover,
+a:hover,
+button:hover {
+  cursor: pointer
+}
+
+abbr,
+img {
+  border: none
+}
+
+img {
+  outline: none;
+  max-width: 100%;
+  // width: auto;
+  height: auto
+}
+
+button,
+input[type=button],
+input[type=submit] {
+  border: none
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 13px 26px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 10px;
+  transition: all .2s;
+  border-radius: 3px;
+  text-align: center;
+  &:active, &:focus, &:hover {
+    text-decoration: none;
+    outline: 0
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .btn {
+    font-size: 16px;
+    font-size: 1rem
+  }
+}
+
+.SvgIcon {
+  display: inline-block;
+  // vertical-align: text-bottom;
+  width: 1.3em;
+  height: 1.3em;
+  fill: currentColor
+}
+
+[class*=animate] {
+  animation-fill-mode: forwards;
+  animation-duration: .3s;
+  animation-timing-function: ease
+}
+
+html:not(.no-js) [data-animation^=fade] {
+  opacity: 0;
+  transition: opacity .4s, transform .8s
+}
+
+html:not(.no-js) [data-animation^=fade].elx-animate {
+  opacity: 1;
+  transform: translateZ(0)
+}
+
+html:not(.no-js) [data-animation=fadeUp] {
+  transform: translate3d(0, 110px, 0)
+}
+
+html:not(.no-js) [data-animation=fadeUpSmall] {
+  transform: translate3d(0, 55px, 0)
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity .2s
+}
+
+html {
+  font-size: 100%
+}
+
+body {
+  font-family: Regular, Noto Sans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased
+}
+
+.alpha,
+h1 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  font-size: 1.75rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .alpha,
+  h1 {
+    font-size: 36px;
+    font-size: 2.25rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .alpha,
+  h1 {
+    font-size: 54px;
+    font-size: 3.375rem
+  }
+}
+
+.beta,
+h2 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  font-size: 1.5rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .beta,
+  h2 {
+    font-size: 30px;
+    font-size: 1.875rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .beta,
+  h2 {
+    font-size: 40px;
+    font-size: 2.5rem
+  }
+}
+
+.gamma,
+h3 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  font-size: 1.375rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .gamma,
+  h3 {
+    font-size: 26px;
+    font-size: 1.625rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .gamma,
+  h3 {
+    font-size: 32px;
+    font-size: 2rem
+  }
+}
+
+.delta,
+h4 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .delta,
+  h4 {
+    font-size: 22px;
+    font-size: 1.375rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .delta,
+  h4 {
+    font-size: 26px;
+    font-size: 1.625rem
+  }
+}
+
+.epsilon,
+h5 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-size: 1.125rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .epsilon,
+  h5 {
+    font-size: 18px;
+    font-size: 1.125rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .epsilon,
+  h5 {
+    font-size: 20px;
+    font-size: 1.25rem
+  }
+}
+
+.zeta,
+h6 {
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-size: 1rem
+}
+
+@media only screen and (min-width:540px) {
+
+  .zeta,
+  h6 {
+    font-size: 16px;
+    font-size: 1rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .zeta,
+  h6 {
+    font-size: 16px;
+    font-size: 1rem
+  }
+}
+
+.desc {
+  line-height: 1;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-size: .9375rem
+}
+
+@media only screen and (min-width:540px) {
+  .desc {
+    font-size: 15px;
+    font-size: .9375rem
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .desc {
+    font-size: 15px;
+    font-size: .9375rem
+  }
+}
+
+.text-bold,
+b,
+strong {
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500
+}

@@ -1,0 +1,279 @@
+.CategoryCarousel {
+    position: relative;
+    width: 100%;
+    // min-height: 504px;
+    margin: 0 auto 30px;
+    padding: 15px 0 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 0;
+  }
+  .CategoryCarousel .CategoryCard {
+    background: #eaeef2;
+  }
+  .swiper-category-carousel {
+    padding: 0;
+  }
+  .swiper-category-carousel {
+    max-width: 100%;
+    margin-left: auto;
+  }
+  .CategoryCarousel .swiper-category-carousel {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
+  .CategoryCarousel .CategoryCard-figure {
+    max-width: 100px;
+  }
+  
+  .CategoryCard-figure {
+    position: relative;
+    width: 100%;
+    // height: 100%;
+    height: auto;
+    max-width: 50px;
+    margin: 0;
+    overflow: hidden;
+  }
+//   figure {
+//     margin: 0;
+//     padding: 0;
+//   }
+  .CategoryCarousel .CategoryCard-img {
+    // position: absolute;
+    // top: 50%;
+    position: relative;
+    top:0;
+    transform: translateY(-50%);
+  }
+  .CategoryCarousel .CategoryCarousel-item,
+  .no-js .CategoryCarousel-item {
+    display: inline-block;
+  }
+  .CategoryCarousel .swiper-slide {
+    width: 50%;
+  }
+  .swiper-slide {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+  }
+  .CategoryCarousel-item {
+    width: 50%;
+  }
+  .CategoryCarousel-item {
+    display: none;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transition: opacity 15s;
+  }
+  
+  .CategoryCard {
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    color: #011e41;
+    border-radius: 2px;
+    background-color: #eaeef2;
+    font-family: Semibold, Noto Sans, Arial, sans-serif;
+    font-weight: 500;
+  }
+  
+  .CategoryCard-img {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .CategoryCarousel .CategoryCard-figure:before {
+    display: block;
+    content: '';
+    width: 100%;
+    // padding-top: 100%;
+    padding-top: 80%;
+  }
+//   :after,
+//   :before {
+//     box-sizing: border-box;
+//   }
+  .CategoryCarousel-title {
+    line-height: 1.2;
+    font-family: Semibold, Noto Sans, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 80px;
+    margin: 10px;
+  }
+  .CategoryCarousel .CategoryCard-heading {
+    padding: 30px 0 0;
+  }
+  .CategoryCard-heading {
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 0 60px;
+    flex: 0 0 60px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .CategoryCarousel .CategoryCard-title {
+    min-height: 95px;
+  }
+  .CategoryCarousel .CategoryCard-title {
+    text-align: center;
+    padding: 15px 10px 20px;
+    min-height: 112px;
+  }
+  .CategoryCard-title {
+    word-break: normal;
+    line-height: 1.5;
+  }
+  
+  .CategoryCard-title {
+    font-size: 14px;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 5px;
+    margin: auto 0;
+    line-height: 1;
+    word-break: break-word;
+    text-align: left;
+  }
+  .CategoryCarousel-inner {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    transition: height 0.6s ease-out;
+  }
+  
+  @media only screen and (min-width: 300px) {
+    .CategoryCarousel--navigation-visible .swiper-category-carousel {
+      max-width: calc(70% - 5px);
+    }
+    .CategoryCarousel .swiper-category-carousel {
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .CategoryCarousel-item {
+      margin: 0;
+      padding: 0 5px;
+    }
+    .CategoryCarousel--navigation-visible .swiper-category-carousel {
+      max-width: calc(85% - 5px);
+    }
+    .CategoryCarousel-item:nth-child(2n),
+    .CategoryCarousel-item:nth-child(odd) {
+      padding: 0 5px;
+    }
+    .CategoryCarousel .swiper-slide {
+      width: 100%;
+    }
+    .CategoryCard {
+      color: #011e41;
+      background-color: #eaeef2;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    .CategoryCard-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .CategoryCard-heading {
+      padding: 30px 10px 0;
+    }
+    .CategoryCard-title {
+      font-size: 16px;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  @media only screen and (min-width: 540px) {
+    .CategoryCarousel-title {
+      font-size: 22px;
+      font-size: 1.375rem;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .CategoryCarousel {
+      min-height: 312px;
+      margin: 30px auto;
+      padding: 0;
+      .CategoryCarousel--navigation-visible .swiper-category-carousel {
+        max-width: calc(75% - 5px);
+      }
+    }
+    .CategoryCarousel .CategoryCard-figure {
+      max-width: 150px;
+    }
+    .CategoryCard-figure:before {
+      display: block;
+      content: '';
+      width: 100%;
+      padding-top: 100%;
+    }
+    .CategoryCarousel-title {
+      font-size: 26px;
+      font-size: 1.625rem;
+      margin-top: 50px;
+    }
+    .CategoryCarousel .CategoryCard-heading {
+    //   padding: 50px 0 0;
+        padding: 0;
+    }
+    .CategoryCarousel .CategoryCard-title {
+      text-align: left;
+    }
+    .CategoryCarousel .CategoryCard-title {
+      padding: 15px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 0;
+    }
+    .CategoryCard-title {
+      padding: 10px 15px;
+    }
+    .CategoryCarousel-inner {
+      overflow: visible;
+    }
+  }

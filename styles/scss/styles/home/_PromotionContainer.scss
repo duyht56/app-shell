@@ -1,0 +1,174 @@
+.PromotionContentItem {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  position: relative !important;
+  margin-bottom: 10px;
+}
+.PromotionContentItem-content, .PromotionContentItem-content-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  padding: 20px 30px;
+  background-image: linear-gradient(180deg,rgba(30,37,46,0) 30%,rgba(30,37,46,.8) 75%,#1e252e 84%);
+  color: #fff;
+  box-sizing: border-box;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  height: 100%;
+  width: 100%;
+}
+.PromotionContentItem-content-preHeader {
+  background-color: #011e41;
+  padding: 5px 20px;
+  position: absolute;
+  top: 20px;
+  // left: 0;
+  text-transform: uppercase;
+  color: #dfe7ea;
+  font-family: Semibold,Noto Sans,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.PromotionContentItem-content-title {
+  margin: 0;
+  position: relative;
+  line-height: 1.2;
+  font-family: Semibold, Noto Sans, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+.PromotionContentItem-media {
+  position: relative;
+  width: 100%;
+  min-height: 115vw;
+}
+.PromotionContentItem-media-image, .PromotionContentItem-media-video {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.PromotionContainer--twoModules, .PromotionContainer--threeModules {
+  -ms-flex-direction: column;
+  flex-direction: column;
+ }
+@media only screen and (min-width: 1024px) {
+  .PromotionContentItem-content,
+  .PromotionContentItem-content-link {
+    max-width: 40%;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .PromotionContentItem {
+      margin-bottom: 15px;
+      min-height: 38vw;
+      height: 0;
+  }
+  .PromotionContentItem-content,
+  .PromotionContentItem-content-link {
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #011e41;
+    position: relative;
+    max-width: 55%;
+  }
+  .PromotionContentItem-content-title {
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .PromotionContentItem-content-text {
+    display: block;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+  .PromotionContainer--twoModules {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    .PromotionContentItem {
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+      width: calc(50% - 15px);
+    }
+    .PromotionContentItem-content,
+    .PromotionContentItem-content-link {
+      background-color: transparent;
+      max-width: 100%;
+      padding: 30px;
+    }
+  }
+  .PromotionContainer--threeModules {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    .PromotionContentItem {
+      -ms-flex: 1 1 0px;
+      flex: 1 1 0;
+      width: calc(33.33333% - 15px);
+      .PromotionContentItem-content,
+      .PromotionContentItem-content-link {
+        background-color: transparent;
+        max-width: 100%;
+        padding: 30px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 540px) {
+  .PromotionContentItem-content-title {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .PromotionContentItem-content,
+  .PromotionContentItem-content-link {
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #011e41;
+    background-image: none !important;
+    position: relative;
+    max-width: 40%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .PromotionContentItem-content-preHeader {
+    padding: 0 !important;
+    position: inherit !important;
+  }
+}
+.PromotionContentItem-content-body {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .PromotionContentItem-media {
+    min-height: auto;
+    height: 100%;
+    max-width: 45%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .PromotionContentItem-media {
+    max-width: 60%;
+  }
+}

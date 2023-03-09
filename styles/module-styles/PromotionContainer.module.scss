@@ -1,0 +1,94 @@
+.PromotionContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    box-sizing: border-box;
+    & > * {
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+    &*,
+    &:after,
+    &:before {
+      box-sizing: inherit;
+    }
+    .PromotionContentItem-body {
+      width: 100%;
+    }
+    .PromotionContentItem-media {
+      // position: relative;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .PromotionContainer .PromotionContentItem-media {
+      min-height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .PromotionContentItem {
+      &:hover {
+        .PromotionContentItem-content-text {
+          opacity: 1;
+          height: auto;
+        }
+      }
+    }
+    .PromotionContentItem-content,
+    .PromotionContentItem-content-link {
+      .PromotionContentItem-content-text {
+        opacity: 0;
+        height: 0;
+        width: 100%;
+        // transition: height 1s ease-in-out, opacity 0.5s ease-in-out;
+      }
+    }
+  }
+  .PromotionContentItem-content,
+  .PromotionContentItem-content-link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    padding: 20px 30px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(30, 37, 46, 0) 30%,
+      rgba(30, 37, 46, 0.8) 75%,
+      #1e252e 84%
+    );
+    color: #fff;
+    box-sizing: border-box;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    height: 100%;
+    width: 100%;
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+    .PromotionContentItem-content-preHeader {
+      background-color: #011e41;
+      padding: 5px 20px;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      text-transform: uppercase;
+      color: #fff;
+      font-family: Semibold, Noto Sans, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      font-size: 1rem;
+    }
+  }
