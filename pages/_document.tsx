@@ -6,6 +6,8 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from 'next/document';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 interface DocumentProps extends DocumentInitialProps {
   pageProps: {
@@ -13,6 +15,25 @@ interface DocumentProps extends DocumentInitialProps {
       brand: string;
       language: string;
     };
+  };
+}
+
+class InlineStylesHead extends Head {
+  getCssLinks: Head['getCssLinks'] = ({ allFiles }) => {
+    const { assetPrefix } = this.context;
+    if (!allFiles || allFiles.length === 0) return null;
+    return allFiles
+      .filter((file: any) => /\.css$/.test(file))
+      .map((file: any) => (
+        <style
+          key={file}
+          nonce={this.props.nonce}
+          data-href={`${assetPrefix}/_next/${file}`}
+          dangerouslySetInnerHTML={{
+            __html: readFileSync(join(process.cwd(), '.next', file), 'utf-8'),
+          }}
+        />
+      ));
   };
 }
 
@@ -42,7 +63,8 @@ class CustomDocument extends Document<DocumentProps> {
     console.log(brand);
     return (
       <Html lang={language} data-theme={brand}>
-        <Head title="POC">
+        <InlineStylesHead />
+        {/* <Head title="POC">
           {brand === 'Electrolux' && (
             <>
               <link href="/styles/electrolux.css" rel="stylesheet"></link>
@@ -59,7 +81,7 @@ class CustomDocument extends Document<DocumentProps> {
             name="description"
             content="Vår utmärkta PerfectCare 600 tvättmaskin med SensiCare System justerar längden på programmet efter tvättmängden, och använder mindre energi och vatten samt förhindrar att plaggen tvättas för länge. Aktiverar de mest ekonomiska programmen för även de minsta tvättmängderna"
           ></meta>
-        </Head>
+        </Head> */}
         <body>
           <Main />
           <NextScript />
