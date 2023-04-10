@@ -5,6 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const deps = require('./package.json').dependencies;
 
 module.exports = withBundleAnalyzer({
+  output: 'standalone',
   // Cache all fonts
   async headers() {
     return [
