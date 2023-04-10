@@ -42,7 +42,7 @@ class CustomDocument extends Document<DocumentProps> {
     console.log(brand);
     return (
       <Html lang={language} data-theme={brand}>
-        <Head>
+        <Head title="POC">
           {brand === 'Electrolux' && (
             <>
               <link href="/styles/electrolux.css" rel="stylesheet"></link>
@@ -55,6 +55,10 @@ class CustomDocument extends Document<DocumentProps> {
               <link rel="stylesheet" href="/fonts/aeg/font.css" />
             </>
           )}
+          <meta
+            name="description"
+            content="Vår utmärkta PerfectCare 600 tvättmaskin med SensiCare System justerar längden på programmet efter tvättmängden, och använder mindre energi och vatten samt förhindrar att plaggen tvättas för länge. Aktiverar de mest ekonomiska programmen för även de minsta tvättmängderna"
+          ></meta>
         </Head>
         <body>
           <Main />
