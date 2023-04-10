@@ -51,7 +51,7 @@ export const getPageData = async (
   // const bffs = await httpClient.get<IBFF>({ url: process.env.NEXT_PUBLIC_APP_SHELL_URL + '/mock/bff.json' });
   // const bff = bffs.friendlyUrlBff.find(b => b.url === urlSlug);
   const pageData = await httpClient.get({
-    url: `http://localhost:3000/api/GetPage?code=dPMklq1sLlX8m3TFDwCr8oJ_8S4xtPlWhazobCTppsgcAzFuRZ6Lww==&urlSlug=${urlSlug}`,
+    url: `https://app-shell-six.vercel.app/api/GetPage?code=dPMklq1sLlX8m3TFDwCr8oJ_8S4xtPlWhazobCTppsgcAzFuRZ6Lww==&urlSlug=${urlSlug}`,
     config: { headers },
   });
 
