@@ -59,6 +59,7 @@ class CustomDocument extends Document<DocumentProps> {
             name="description"
             content="Vår utmärkta PerfectCare 600 tvättmaskin med SensiCare System justerar längden på programmet efter tvättmängden, och använder mindre energi och vatten samt förhindrar att plaggen tvättas för länge. Aktiverar de mest ekonomiska programmen för även de minsta tvättmängderna"
           ></meta>
+          <meta name="title" content="POC"></meta>
         </Head>
         <body>
           <Main />
