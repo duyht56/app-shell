@@ -1,0 +1,13 @@
+{
+  "friendlyUrlBff": [
+    {
+      "url": "/sv-se/laundry/washing-machines/compact-washing-machine/ew6s4204c1/",
+      "bff": "http://localhost:3000"
+    },
+    { "url": "/sv-se/basket/", "bff": "http://localhost:3000" },
+    {
+      "url": "/sv-se/laundry/washing-machines/compact-washing-machine/",
+      "bff": "http://localhost:3000"
+    }
+  ]
+}

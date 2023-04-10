@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Light;
+    font-weight: 200;
+    font-style: normal;
+    font-display: fallback;
+    src: url("./metricweb-light.woff2") format("woff2"),
+        url("./metricweb-light.woff") format("woff");
+}
+
+@font-face {
+    font-family: Regular;
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: url("./metricweb-regular.woff2") format("woff2"),
+        url("./metricweb-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: Medium;
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: url("./metricweb-medium.woff2") format("woff2"),
+        url("./metricweb-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: Semibold;
+    font-weight: 500;
+    font-style: normal;
+    font-display: fallback;
+    src: url("./metricweb-semibold.woff2") format("woff2"),
+        url("./metricweb-semibold.woff") format("woff");
+}

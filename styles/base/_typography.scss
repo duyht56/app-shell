@@ -1,0 +1,58 @@
+html {
+  font-size: $font-size * 1%;
+}
+
+body {
+  @include font-family('regular');
+  @include to-rem(font-size, $font-base);
+
+  line-height: $line-height-body;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1,
+.alpha {
+  @include t-default-h1;
+}
+
+h2,
+.beta {
+  @include t-default-h2;
+}
+
+h3,
+.gamma {
+  @include t-default-h3;
+}
+
+h4,
+.delta {
+  @include t-default-h4;
+}
+
+h5,
+.epsilon {
+  @include t-default-h5;
+}
+
+h6,
+.zeta {
+  @include t-default-h6;
+}
+
+.desc {
+  @include t-default-desc;
+}
+
+b,
+strong,
+.text-bold {
+  @include font-family('bold');
+}
+
+// Hide component whilst mounting
+[v-cloak] {
+  display: none;
+}
