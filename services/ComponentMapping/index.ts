@@ -12,6 +12,7 @@ const Footer = dynamic(() => import(`@/components/Footer`), {
 // PDP components
 const VideoGallery = dynamic(() => import('PDP/VideoGallery'), { ssr: true });
 const BenefitsProps = dynamic(() => import('PDP/BenefitsProps'), { ssr: true });
+const BenefitsProps0 = dynamic(() => import('PDP/BenefitsProps0'), { ssr: true });
 const BenefitsProps1 = dynamic(() => import('PDP/BenefitsProps1'), { ssr: true });
 const BenefitsProps2 = dynamic(() => import('PDP/BenefitsProps2'), { ssr: true });
 const BenefitsProps3 = dynamic(() => import('PDP/BenefitsProps3'), { ssr: true });
@@ -58,6 +59,7 @@ export const Components: { [key: string]: ComponentType<object> } = {
   VideoGallery,
   BenefitsProps,
   DetailProps,
+  BenefitsProps0,
   BenefitsProps1,
   BenefitsProps2,
   BenefitsProps3,

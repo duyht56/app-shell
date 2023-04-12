@@ -2074,7 +2074,12 @@ const pdp = (productCode: keyof typeof product) => [
       "name": "BenefitsProps30",
       "props": {}
     },
-  ] : []
+  ] : [
+    {
+      "name": "BenefitsProps0",
+      "props": {}
+    },
+  ]
 ]
 
 export default function handler(req: any, res: any) {
