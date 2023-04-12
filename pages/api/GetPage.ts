@@ -1953,6 +1953,126 @@ const pdp = (productCode: keyof typeof product) => [
     "name": "BenefitsProps",
     "props": {}
   },
+  {
+    "name": "BenefitsProps1",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps2",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps3",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps4",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps5",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps6",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps7",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps8",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps9",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps10",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps11",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps12",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps13",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps14",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps15",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps16",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps17",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps18",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps19",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps20",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps21",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps22",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps23",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps24",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps25",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps26",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps27",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps28",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps29",
+    "props": {}
+  },
+  {
+    "name": "BenefitsProps30",
+    "props": {}
+  },
 ]
 
 export default function handler(req: any, res: any) {
