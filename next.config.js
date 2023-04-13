@@ -68,7 +68,7 @@ module.exports = withBundleAnalyzer({
         },
         remotes: {
           SHELL: `SHELL@${process.env.APP_SHELL}/_next/static/${location}/remoteEntry.js`,
-          PDP: `PDP@${process.env.PDP_URL}/_next/static/${location}/remoteEntry.js`,
+          PDP: `PDP@https://com-3cbc6.web.app/static/${location}/remoteEntry.js`,
           BASKET: `BASKET@${process.env.BASKET_URL}/_next/static/${location}/remoteEntry.js`,
         },
         shared: ['react', 'react-dom'],
